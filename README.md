@@ -1,30 +1,64 @@
-# orm-ecommerce
+# E-Commerce Backend API
 
-# 13 Object-Relational Mapping (ORM): E-Commerce Back End
+## 13 Object-Relational Mapping (ORM): E-Commerce Back End
 
-## Description
+## 📝 Description
 
-This E-Commerce Backend API is a powerful, simple-to-use back-end system designed specifically for e-commerce applications. Utilizing MySQL for database management, it provides a robust platform for front-end developers to interact with and manipulate e-commerce related data effectively. Through the development of this project, I have gained deeper insights into back-end database systems and architecture, enhancing my skills in creating scalable and efficient back-end solutions.
+The E-Commerce Backend API is a robust server-side application that empowers e-commerce platforms with a dynamic and scalable database management system. Built with Node.js, Sequelize ORM, and MySQL, this application provides essential API endpoints for managing product catalogs, including departments, products, and tags. It facilitates seamless CRUD operations, enabling front-end developers to effortlessly interact with back-end data for e-commerce solutions.
 
-## Features
+## 🚀 Getting Started
 
-- **Sequelize ORM**: Simplifies MySQL database interactions using a high-level abstraction.
-- **ExpressJS Framework**: Offers a robust set of features for web and mobile applications.
-- **NodeJS Environment**: Executes JavaScript code server-side, providing a full-stack development capability.
-- **CRUD Operations**: Supports GET, POST, PUT, and DELETE HTTP methods for comprehensive data management.
+1. **Clone the Repository**: Clone this project to your local machine using `git clone`.
+2. **Navigate to Project Directory**: Change into the project directory.
+3. **Install Dependencies**: Execute `npm install` to install required dependencies.
+4. **Database Setup**: Initialize your MySQL database using the provided `schema.sql` in the `db` directory. Optionally, seed the database with initial data from `seeds` directory by running `npm run seed`.
+5. **Environment Configuration**: Create a `.env` file in the root directory to store your database name (`DB_NAME`), user (`DB_USER`), and password (`DB_PASSWORD`).
+6. **Launch the Server**: Start the application server using `npm start`. Ensure you have MySQL running.
 
-## Installation
+## 📋 User Story
 
-1. **NodeJS Requirement**: Ensure NodeJS is installed on your system. [Download NodeJS here](https://nodejs.org/en) if needed.
-2. **Repository Setup**: Clone this GitHub repository or download the ZIP. Extract (if needed) and navigate to the project directory.
-3. **Install Dependencies**: Open a terminal in the project directory and execute `npm i` to install required npm packages.
-4. **Database Configuration**: Ensure the `ecommerce_db` schema is set up in your MySQL database. [MySQL schema setup guide](https://dev.mysql.com/doc/refman/8.0/en/create-database.html).
-5. **Environment Variables**: Create a `.env` file in the root directory for database configurations: `DB_NAME`, `DB_USER`, & `DB_PASSWORD`. [Learn about .env files](https://nodejs.dev/en/learn/how-to-read-environment-variables-from-nodejs/).
-6. **Start the Application**: Run `npm start` to initiate the server. **Note:** Testing the API endpoints via an application like Insomnia is recommended.
-7. **Seed Database (Optional)**: To populate your database with starter data, run `npm run seed` in your terminal.
+AS A manager at an internet retail company  
+I WANT a back end for my e-commerce website that uses the latest technologies  
+SO THAT my company can compete with other e-commerce companies
 
-## Usage
+## 📋 Acceptance Criteria
 
-Explore the full capabilities of the E-Commerce Backend API through our comprehensive demo. Click the link below to watch a detailed walkthrough, demonstrating how to utilize the API endpoints effectively for data manipulation and retrieval.
+- GIVEN a functional Express.js API
+- WHEN I add my database name, MySQL username, and MySQL password to an environment variable file
+- THEN I am able to connect to a database using Sequelize
+- WHEN I enter schema and seed commands
+- THEN a development database is created and is seeded with test data
+- WHEN I enter the command to invoke the application
+- THEN my server is started and the Sequelize models are synced to the MySQL database
+- WHEN I open API GET routes in Insomnia for categories, products, or tags
+- THEN the data for each of these routes is displayed in a formatted JSON
+- WHEN I test API POST, PUT, and DELETE routes in Insomnia
+- THEN I am able to successfully create, update, and delete data in my database
 
-[Watch the Demo Video]()
+## 🎥 Walkthrough Video
+
+COMING SOON
+
+## ✨ Features
+
+- CRUD operations for managing product categories, products, and tags.
+- Sequelize ORM for MySQL database interaction.
+- Express.js server for handling API requests.
+- Dotenv for environment variable management.
+- Comprehensive API testing via Insomnia or Postman.
+
+## 📷 Screenshots
+
+COMING SOON
+
+## 💡 Resources
+
+- [Sequelize Documentation](https://sequelize.org/)
+- [Express.js Documentation](https://expressjs.com/)
+- [MySQL Documentation](https://dev.mysql.com/doc/)
+- [Dotenv npm package](https://www.npmjs.com/package/dotenv)
+- Additional learning resources: MDN Web Docs, W3Schools, Stack Overflow
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
